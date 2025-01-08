@@ -11,6 +11,9 @@ import PasswordForm
 import RegisterPanel 
     from "./Components/RegisterPanel/RegisterPanel";
     
+import TaskManagement 
+    from "./Components/TaskManagement/TaskManagement";
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -36,6 +39,9 @@ function App() {
             <li className="nav-item">
               <Link to="/register" className="nav-link">Register</Link>
             </li>
+            <li className="nav-item">
+              <Link to="/task" className="nav-link">TaskManagement</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -43,6 +49,7 @@ function App() {
           <Route path="/currency" element={<CurrencyComp />} />
           <Route path="/password" element={<PasswordForm />} />
           <Route path="/register" element={<RegisterPanel />} />
+          <Route path="/task" element={<TaskManagement />} />
 
         </Routes>
       </div>
@@ -58,6 +65,8 @@ function ButtonNavigation() {
           <button className="btn btn-primary m-1" onClick={() => navigate('/')}>Home</button>
           <button className="btn btn-primary m-1" onClick={() => navigate('/compressor')}>Compressor</button>
           <button className="btn btn-primary m-1" onClick={() => navigate('/currency')}>Currency</button>
+          <button className="btn btn-primary m-1" onClick={() => navigate('/task')}>TaskManagement</button>
+
       </div>
   );
 }
