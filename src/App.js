@@ -14,6 +14,9 @@ import RegisterPanel
 import TaskManagement 
     from "./Components/TaskManagement/TaskManagement";
 
+import WordGuess 
+    from "./Components/WordGuess/WordGuess";
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -42,6 +45,9 @@ function App() {
             <li className="nav-item">
               <Link to="/task" className="nav-link">TaskManagement</Link>
             </li>
+            <li className="nav-item">
+              <Link to="/guess" className="nav-link">WordGuess</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -50,7 +56,7 @@ function App() {
           <Route path="/password" element={<PasswordForm />} />
           <Route path="/register" element={<RegisterPanel />} />
           <Route path="/task" element={<TaskManagement />} />
-
+          <Route path="/guess" element={<WordGuess />} />
         </Routes>
       </div>
     </Router>
