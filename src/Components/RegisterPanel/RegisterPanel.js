@@ -25,13 +25,13 @@ function RegisterPanel() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(
-            firstName,
+            firstName,          
             lastName,
-            email,
+            email,         
             contact,
-            gender,
+            gender,           
             selectedOption,
-            subjects,
+            subjects,            
             resume,
             url,
             about

@@ -44,7 +44,7 @@ const GFGWordGame = () => {
     const [gameOver, setGameOver] = useState(false);
     const [wrongGuesses, setWrongGuesses] = useState(0);
 
-    useEffect(() => {
+    useEffect(() => {   
         if (wrongGuesses >= 3) {
             // Code to show the popup or message for game over
             window.alert("Game Over! You made too many wrong guesses.");

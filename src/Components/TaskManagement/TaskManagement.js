@@ -107,7 +107,7 @@ function TaskManagement() {
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody>                     
                             {upcomingTasks.map((t) => (
                                 <tr key={t.id}>
                                     <td>{t.task}</td>
